@@ -1,0 +1,42 @@
+{
+  "name": "genpark-multi-agent-consensus-voting-protocol-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-agent proposal deliberation and Byzantine-fault-tolerant consensus voting protocol aggregating votes across diverse personas.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "multi-agent",
+  "tags": [
+    "autogen",
+    "crewai",
+    "langgraph",
+    "consensus",
+    "voting-protocol"
+  ],
+  "inputs": {
+    "proposal_id": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "total_votes": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "deliberation_id": {
+      "type": "string"
+    },
+    "outcome": {
+      "type": "string"
+    },
+    "approval_ratio": {
+      "type": "number"
+    },
+    "bft_safety_margin": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
